@@ -24,10 +24,9 @@
     
     UILabel *showLabel = [[UILabel alloc] init];
     showLabel.backgroundColor = [UIColor grayColor];
-    showLabel.centerX = self.view.centerX;
-    showLabel.centerY = self.view.centerY;
     showLabel.width = 100;
     showLabel.height = 30;
+    showLabel.center = self.view.center;
     self.showLabel = showLabel;
     [self.view addSubview:showLabel];
 

@@ -22,6 +22,7 @@
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="guJ-sI-PFl">
                     <rect key="frame" x="87.5" y="318.5" width="200" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="O8W-CF-yzO"/>
                         <constraint firstAttribute="height" constant="30" id="k0r-Wp-7BB"/>
