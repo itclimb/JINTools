@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "JINBlockViewController.h"
+#import "JINTestView.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -25,6 +26,11 @@
     self.datas = @[
                    @"传值"
                    ];
+    
+    JINTestView *testView = [[JINTestView alloc] init];
+    testView.frame = CGRectMake(200, 200, 100, 100);
+    [self.view addSubview:testView];
+    
     
 }
 
