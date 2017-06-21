@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		3F1B34911EFA046100B41AC1 /* UIView+JINExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34901EFA046100B41AC1 /* UIView+JINExtension.m */; };
 		3F1B34951EFA04B200B41AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34941EFA04B200B41AC1 /* AppDelegate.m */; };
-		3F1B34981EFA05DF00B41AC1 /* JINProtocolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34971EFA05DF00B41AC1 /* JINProtocolView.m */; };
-		3F1B349F1EFA09BA00B41AC1 /* JINTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B349E1EFA09BA00B41AC1 /* JINTestView.m */; };
+		3F1B34A61EFA429900B41AC1 /* JINProtocolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34A31EFA429900B41AC1 /* JINProtocolView.m */; };
+		3F1B34A71EFA429900B41AC1 /* JINTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34A51EFA429900B41AC1 /* JINTestView.m */; };
 		3F29EC941EEE2EB700959533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29EC931EEE2EB700959533 /* main.m */; };
 		3F29EC9A1EEE2EB800959533 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29EC991EEE2EB800959533 /* ViewController.m */; };
 		3F29EC9F1EEE2EB800959533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F29EC9E1EEE2EB800959533 /* Assets.xcassets */; };
@@ -26,11 +26,11 @@
 		3F1B34901EFA046100B41AC1 /* UIView+JINExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JINExtension.m"; sourceTree = "<group>"; };
 		3F1B34931EFA04B200B41AC1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F1B34941EFA04B200B41AC1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3F1B34961EFA05DF00B41AC1 /* JINProtocolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINProtocolView.h; sourceTree = "<group>"; };
-		3F1B34971EFA05DF00B41AC1 /* JINProtocolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINProtocolView.m; sourceTree = "<group>"; };
-		3F1B34991EFA073E00B41AC1 /* JINProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINProperty.h; sourceTree = "<group>"; };
-		3F1B349D1EFA09BA00B41AC1 /* JINTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINTestView.h; sourceTree = "<group>"; };
-		3F1B349E1EFA09BA00B41AC1 /* JINTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINTestView.m; sourceTree = "<group>"; };
+		3F1B34A11EFA429900B41AC1 /* JINProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINProperty.h; sourceTree = "<group>"; };
+		3F1B34A21EFA429900B41AC1 /* JINProtocolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINProtocolView.h; sourceTree = "<group>"; };
+		3F1B34A31EFA429900B41AC1 /* JINProtocolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINProtocolView.m; sourceTree = "<group>"; };
+		3F1B34A41EFA429900B41AC1 /* JINTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINTestView.h; sourceTree = "<group>"; };
+		3F1B34A51EFA429900B41AC1 /* JINTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINTestView.m; sourceTree = "<group>"; };
 		3F29EC8F1EEE2EB700959533 /* JINTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JINTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F29EC931EEE2EB700959533 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F29EC981EEE2EB800959533 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -77,6 +77,18 @@
 			path = Enter;
 			sourceTree = "<group>";
 		};
+		3F1B34A01EFA429900B41AC1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3F1B34A11EFA429900B41AC1 /* JINProperty.h */,
+				3F1B34A21EFA429900B41AC1 /* JINProtocolView.h */,
+				3F1B34A31EFA429900B41AC1 /* JINProtocolView.m */,
+				3F1B34A41EFA429900B41AC1 /* JINTestView.h */,
+				3F1B34A51EFA429900B41AC1 /* JINTestView.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		3F29EC861EEE2EB700959533 = {
 			isa = PBXGroup;
 			children = (
@@ -106,11 +118,7 @@
 				3F29ECD21EEE38C000959533 /* JINBlockSecondController.h */,
 				3F29ECD31EEE38C000959533 /* JINBlockSecondController.m */,
 				3F29ECD51EEE38EB00959533 /* JINBlockSecondController.xib */,
-				3F1B34991EFA073E00B41AC1 /* JINProperty.h */,
-				3F1B34961EFA05DF00B41AC1 /* JINProtocolView.h */,
-				3F1B34971EFA05DF00B41AC1 /* JINProtocolView.m */,
-				3F1B349D1EFA09BA00B41AC1 /* JINTestView.h */,
-				3F1B349E1EFA09BA00B41AC1 /* JINTestView.m */,
+				3F1B34A01EFA429900B41AC1 /* Protocol */,
 				3F1B348E1EFA046100B41AC1 /* Extension */,
 				3F29EC921EEE2EB700959533 /* Supporting Files */,
 			);
@@ -204,10 +212,10 @@
 			files = (
 				3F29EC9A1EEE2EB800959533 /* ViewController.m in Sources */,
 				3F29ECCE1EEE37F500959533 /* JINBaseViewController.m in Sources */,
-				3F1B34981EFA05DF00B41AC1 /* JINProtocolView.m in Sources */,
+				3F1B34A61EFA429900B41AC1 /* JINProtocolView.m in Sources */,
 				3F1B34911EFA046100B41AC1 /* UIView+JINExtension.m in Sources */,
 				3F1B34951EFA04B200B41AC1 /* AppDelegate.m in Sources */,
-				3F1B349F1EFA09BA00B41AC1 /* JINTestView.m in Sources */,
+				3F1B34A71EFA429900B41AC1 /* JINTestView.m in Sources */,
 				3F29ECD41EEE38C000959533 /* JINBlockSecondController.m in Sources */,
 				3F29ECD11EEE383000959533 /* JINBlockViewController.m in Sources */,
 				3F29EC941EEE2EB700959533 /* main.m in Sources */,
