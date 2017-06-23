@@ -10,8 +10,9 @@
 
 @interface JINModel : NSObject
 
+@property(nonatomic, assign) int no;
 @property(nonatomic, copy) NSString *name;
-@property(nonatomic, assign) NSString *age;
+@property(nonatomic, copy) NSString *age;
 
 + (instancetype)modelWithDict:(NSDictionary *)dict;
 

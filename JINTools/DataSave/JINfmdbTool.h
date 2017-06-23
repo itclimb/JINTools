@@ -10,9 +10,16 @@
 #import "JINModel.h"
 
 @interface JINfmdbTool : NSObject
-//增
+
+/** add */
 + (void)insert:(JINModel *)model;
-//查
-+ (NSArray *)queryWithKey:(NSString *)key;
+/** delete */
++ (void)deleteData:(JINModel *)model;
+/** update */
++ (void)update:(JINModel *)model;
+/** query */
++ (NSMutableArray *)queryWithKey:(NSString *)key;
+/** queryAll */
++ (NSMutableArray *)queryAll;
 
 @end

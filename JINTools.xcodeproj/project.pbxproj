@@ -30,6 +30,10 @@
 		3F741F151EFBAAC500459F20 /* JINDataTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F741F141EFBAAC500459F20 /* JINDataTestController.m */; };
 		3F741F181EFBB61C00459F20 /* JINModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F741F171EFBB61C00459F20 /* JINModel.m */; };
 		3F741F1B1EFBBE8000459F20 /* JINfmdbTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F741F1A1EFBBE8000459F20 /* JINfmdbTool.m */; };
+		3F741F1F1EFCBB0500459F20 /* JINAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F741F1D1EFCBB0500459F20 /* JINAddController.m */; };
+		3F741F201EFCBB0500459F20 /* JINAddController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F741F1E1EFCBB0500459F20 /* JINAddController.xib */; };
+		3F741F241EFCC0E200459F20 /* JINUpdataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F741F221EFCC0E200459F20 /* JINUpdataController.m */; };
+		3F741F251EFCC0E200459F20 /* JINUpdataController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F741F231EFCC0E200459F20 /* JINUpdataController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +82,12 @@
 		3F741F171EFBB61C00459F20 /* JINModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINModel.m; sourceTree = "<group>"; };
 		3F741F191EFBBE8000459F20 /* JINfmdbTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINfmdbTool.h; sourceTree = "<group>"; };
 		3F741F1A1EFBBE8000459F20 /* JINfmdbTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINfmdbTool.m; sourceTree = "<group>"; };
+		3F741F1C1EFCBB0500459F20 /* JINAddController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINAddController.h; sourceTree = "<group>"; };
+		3F741F1D1EFCBB0500459F20 /* JINAddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINAddController.m; sourceTree = "<group>"; };
+		3F741F1E1EFCBB0500459F20 /* JINAddController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JINAddController.xib; sourceTree = "<group>"; };
+		3F741F211EFCC0E200459F20 /* JINUpdataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINUpdataController.h; sourceTree = "<group>"; };
+		3F741F221EFCC0E200459F20 /* JINUpdataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINUpdataController.m; sourceTree = "<group>"; };
+		3F741F231EFCC0E200459F20 /* JINUpdataController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JINUpdataController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +225,12 @@
 			children = (
 				3F741F131EFBAAC500459F20 /* JINDataTestController.h */,
 				3F741F141EFBAAC500459F20 /* JINDataTestController.m */,
+				3F741F1C1EFCBB0500459F20 /* JINAddController.h */,
+				3F741F1D1EFCBB0500459F20 /* JINAddController.m */,
+				3F741F1E1EFCBB0500459F20 /* JINAddController.xib */,
+				3F741F211EFCC0E200459F20 /* JINUpdataController.h */,
+				3F741F221EFCC0E200459F20 /* JINUpdataController.m */,
+				3F741F231EFCC0E200459F20 /* JINUpdataController.xib */,
 				3F741F161EFBB61C00459F20 /* JINModel.h */,
 				3F741F171EFBB61C00459F20 /* JINModel.m */,
 				3F741F191EFBBE8000459F20 /* JINfmdbTool.h */,
@@ -283,8 +299,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F741F251EFCC0E200459F20 /* JINUpdataController.xib in Resources */,
 				3F1B34BE1EFB77C000B41AC1 /* Info.plist in Resources */,
 				3F29ECD61EEE38EB00959533 /* JINBlockSecondController.xib in Resources */,
+				3F741F201EFCBB0500459F20 /* JINAddController.xib in Resources */,
 				3F29ECA21EEE2EB800959533 /* LaunchScreen.storyboard in Resources */,
 				3F29EC9F1EEE2EB800959533 /* Assets.xcassets in Resources */,
 			);
@@ -297,8 +315,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F741F241EFCC0E200459F20 /* JINUpdataController.m in Sources */,
 				3F741F181EFBB61C00459F20 /* JINModel.m in Sources */,
 				3F29EC9A1EEE2EB800959533 /* ViewController.m in Sources */,
+				3F741F1F1EFCBB0500459F20 /* JINAddController.m in Sources */,
 				3F741F151EFBAAC500459F20 /* JINDataTestController.m in Sources */,
 				3F29ECCE1EEE37F500959533 /* JINBaseViewController.m in Sources */,
 				3F1B34BB1EFB77C000B41AC1 /* FMDatabasePool.m in Sources */,

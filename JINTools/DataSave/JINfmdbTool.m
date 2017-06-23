@@ -31,25 +31,61 @@ static FMDatabase *_db;
 //#MARK: - 增加数据
 + (void)insert:(JINModel *)model
 {
-    BOOL result = [_db executeUpdateWithFormat:@"insert into t_model(modelName,modelAge) values(%@,%@);",model.name, model.age];
+    BOOL result = [_db executeUpdateWithFormat:@"insert into t_model(modelNo, modelName, modelAge) values(%d,%@, %@);",model.no, model.name, model.age];
     if (result) {
-        NSLog(@"新增成功");
+        NSLog(@"add successful!");
+    }
+}
+
+//MARK: - 删除数据
++ (void)deleteData:(JINModel *)model{
+    BOOL result = [_db executeUpdateWithFormat:@"delete from t_model where modelNo = %d",model.no];
+    if (result) {
+        NSLog(@"delete successful!");
+    }
+}
+
+//MARK: - 更新数据
++ (void)update:(JINModel *)model{
+    BOOL result = [_db executeUpdateWithFormat:@"update t_model set modelAge = %@, modelName = %@ where modelNo = %d",model.age, model.name, model.no];
+    if (result) {
+        NSLog(@"update successful!");
     }
 }
 
 //MARK: - 模糊查询
-+ (NSArray *)queryWithKey:(NSString *)key{
++ (NSMutableArray *)queryWithKey:(NSString *)key{
+    
     NSMutableArray *queryResult = [NSMutableArray array];
     FMResultSet *resultSet = [_db executeQuery:[NSString stringWithFormat:@"select * from t_model where modelName like '%%%@%%'",key]];
     while ([resultSet next]) {
-        NSString *name = [resultSet stringForColumn:@"studentName"];
-        int age = [resultSet intForColumn:@"studentAge"];
+        NSString *name = [resultSet stringForColumn:@"modelName"];
+        NSString *age = [resultSet stringForColumn:@"modelAge"];
+        int no = [resultSet intForColumn:@"modelNo"];
         JINModel *model = [[JINModel alloc] init];
         model.name = name;
-        model.age = [NSString stringWithFormat:@"%zd",age];
+        model.age = age;
+        model.no = no;
         [queryResult addObject:model];
     }
-    return queryResult.copy;
+    return queryResult;
+}
+
+//MARK: - 查询数据库所有数据
++ (NSMutableArray *)queryAll{
+    NSMutableArray<JINModel *> *queryResult = [NSMutableArray array];
+    FMResultSet *resultSet = [_db executeQueryWithFormat:@"select * from t_model"];
+    while ([resultSet next]) {
+        int no = [resultSet intForColumn:@"modelNo"];
+        NSString *name = [resultSet stringForColumn:@"modelName"];
+        NSString *age = [resultSet stringForColumn:@"modelAge"];
+        JINModel *model = [[JINModel alloc] init];
+        model.no = no;
+        model.name = name;
+        model.age = age;
+        [queryResult addObject:model];
+    }
+    return queryResult;
 }
 
 @end
