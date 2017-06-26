@@ -77,11 +77,13 @@
         {
             JINDataTestController *vc = [[JINDataTestController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
+            break;
         }
         case 2:
         {
             JINAutoLayoutController *vc = [[JINAutoLayoutController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
+            break;
         }
         default:
             break;
