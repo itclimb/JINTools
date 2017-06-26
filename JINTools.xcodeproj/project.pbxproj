@@ -11,7 +11,6 @@
 		3F1B34951EFA04B200B41AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34941EFA04B200B41AC1 /* AppDelegate.m */; };
 		3F1B34A61EFA429900B41AC1 /* JINProtocolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34A31EFA429900B41AC1 /* JINProtocolView.m */; };
 		3F1B34A71EFA429900B41AC1 /* JINTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34A51EFA429900B41AC1 /* JINTestView.m */; };
-		3F1B34AA1EFB715B00B41AC1 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34A91EFB715B00B41AC1 /* NSArray+Log.m */; };
 		3F1B34B91EFB77C000B41AC1 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34AE1EFB77C000B41AC1 /* FMDatabase.m */; };
 		3F1B34BA1EFB77C000B41AC1 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34B01EFB77C000B41AC1 /* FMDatabaseAdditions.m */; };
 		3F1B34BB1EFB77C000B41AC1 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34B21EFB77C000B41AC1 /* FMDatabasePool.m */; };
@@ -19,6 +18,8 @@
 		3F1B34BD1EFB77C000B41AC1 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34B71EFB77C000B41AC1 /* FMResultSet.m */; };
 		3F1B34BE1EFB77C000B41AC1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F1B34B81EFB77C000B41AC1 /* Info.plist */; };
 		3F1B34C11EFB77FB00B41AC1 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1B34C01EFB77FB00B41AC1 /* libsqlite3.0.tbd */; };
+		3F2794321F009857008DA99D /* JINAutoLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2794311F009857008DA99D /* JINAutoLayoutController.m */; };
+		3F2794351F009C86008DA99D /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2794331F009C86008DA99D /* NSArray+Log.m */; };
 		3F29EC941EEE2EB700959533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29EC931EEE2EB700959533 /* main.m */; };
 		3F29EC9A1EEE2EB800959533 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29EC991EEE2EB800959533 /* ViewController.m */; };
 		3F29EC9F1EEE2EB800959533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F29EC9E1EEE2EB800959533 /* Assets.xcassets */; };
@@ -46,8 +47,6 @@
 		3F1B34A31EFA429900B41AC1 /* JINProtocolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINProtocolView.m; sourceTree = "<group>"; };
 		3F1B34A41EFA429900B41AC1 /* JINTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINTestView.h; sourceTree = "<group>"; };
 		3F1B34A51EFA429900B41AC1 /* JINTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINTestView.m; sourceTree = "<group>"; };
-		3F1B34A81EFB715B00B41AC1 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
-		3F1B34A91EFB715B00B41AC1 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		3F1B34AD1EFB77C000B41AC1 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		3F1B34AE1EFB77C000B41AC1 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		3F1B34AF1EFB77C000B41AC1 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -61,6 +60,10 @@
 		3F1B34B71EFB77C000B41AC1 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		3F1B34B81EFB77C000B41AC1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F1B34C01EFB77FB00B41AC1 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3F2794301F009857008DA99D /* JINAutoLayoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINAutoLayoutController.h; sourceTree = "<group>"; };
+		3F2794311F009857008DA99D /* JINAutoLayoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINAutoLayoutController.m; sourceTree = "<group>"; };
+		3F2794331F009C86008DA99D /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		3F2794341F009C86008DA99D /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		3F29EC8F1EEE2EB700959533 /* JINTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JINTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F29EC931EEE2EB700959533 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F29EC981EEE2EB800959533 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -105,10 +108,10 @@
 		3F1B348E1EFA046100B41AC1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3F2794341F009C86008DA99D /* NSArray+Log.h */,
+				3F2794331F009C86008DA99D /* NSArray+Log.m */,
 				3F1B348F1EFA046100B41AC1 /* UIView+JINExtension.h */,
 				3F1B34901EFA046100B41AC1 /* UIView+JINExtension.m */,
-				3F1B34A81EFB715B00B41AC1 /* NSArray+Log.h */,
-				3F1B34A91EFB715B00B41AC1 /* NSArray+Log.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -169,6 +172,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3F27942F1F009815008DA99D /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3F2794301F009857008DA99D /* JINAutoLayoutController.h */,
+				3F2794311F009857008DA99D /* JINAutoLayoutController.m */,
+			);
+			path = AutoLayout;
+			sourceTree = "<group>";
+		};
 		3F29EC861EEE2EB700959533 = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +213,7 @@
 				3F29ECD51EEE38EB00959533 /* JINBlockSecondController.xib */,
 				3F1B34A01EFA429900B41AC1 /* Protocol */,
 				3F741F121EFBAA3700459F20 /* DataSave */,
+				3F27942F1F009815008DA99D /* AutoLayout */,
 				3F1B348E1EFA046100B41AC1 /* Extension */,
 				3F1B34AB1EFB77A800B41AC1 /* Lib */,
 				3F29EC921EEE2EB700959533 /* Supporting Files */,
@@ -318,6 +331,7 @@
 				3F741F241EFCC0E200459F20 /* JINUpdataController.m in Sources */,
 				3F741F181EFBB61C00459F20 /* JINModel.m in Sources */,
 				3F29EC9A1EEE2EB800959533 /* ViewController.m in Sources */,
+				3F2794321F009857008DA99D /* JINAutoLayoutController.m in Sources */,
 				3F741F1F1EFCBB0500459F20 /* JINAddController.m in Sources */,
 				3F741F151EFBAAC500459F20 /* JINDataTestController.m in Sources */,
 				3F29ECCE1EEE37F500959533 /* JINBaseViewController.m in Sources */,
@@ -327,9 +341,9 @@
 				3F1B34A61EFA429900B41AC1 /* JINProtocolView.m in Sources */,
 				3F1B34911EFA046100B41AC1 /* UIView+JINExtension.m in Sources */,
 				3F1B34951EFA04B200B41AC1 /* AppDelegate.m in Sources */,
-				3F1B34AA1EFB715B00B41AC1 /* NSArray+Log.m in Sources */,
 				3F1B34A71EFA429900B41AC1 /* JINTestView.m in Sources */,
 				3F1B34BD1EFB77C000B41AC1 /* FMResultSet.m in Sources */,
+				3F2794351F009C86008DA99D /* NSArray+Log.m in Sources */,
 				3F29ECD41EEE38C000959533 /* JINBlockSecondController.m in Sources */,
 				3F29ECD11EEE383000959533 /* JINBlockViewController.m in Sources */,
 				3F1B34B91EFB77C000B41AC1 /* FMDatabase.m in Sources */,

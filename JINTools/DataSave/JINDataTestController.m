@@ -128,33 +128,14 @@
     [self.navigationController pushViewController:addVc animated:YES];
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    [self.view endEditing:YES];
+}
+
 //MARK: - lazy load
 - (NSMutableArray *)datas{
     if (!_datas) {
-        NSArray *array = @[
-                           @{
-                               @"name":@"zhangsan",
-                               @"age":@"15"
-                               },
-                           @{
-                               @"name":@"lisi",
-                               @"age":@"17"
-                               },
-                           @{
-                               @"name":@"wangwu",
-                               @"age":@"11"
-                               },
-                           @{
-                               @"name":@"xiaoming",
-                               @"age":@"22"
-                               }
-                           ];
-        NSMutableArray *arrM = [NSMutableArray arrayWithCapacity:array.count];
-        [array enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL * _Nonnull stop) {
-            JINModel *model = [JINModel modelWithDict:dict];
-            [arrM addObject:model];
-        }];
-        _datas = arrM;
+        _datas = [NSMutableArray array];
     }
     return _datas;
 }

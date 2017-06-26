@@ -10,6 +10,7 @@
 #import "JINBlockViewController.h"
 #import "JINTestView.h"
 #import "JINDataTestController.h"
+#import "JINAutoLayoutController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -28,7 +29,8 @@
     
     self.datas = @[
                    @"传值",
-                   @"数据持久化"
+                   @"数据持久化",
+                   @"自动布局"
                    ];
 }
 
@@ -74,6 +76,11 @@
         case 1:
         {
             JINDataTestController *vc = [[JINDataTestController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        case 2:
+        {
+            JINAutoLayoutController *vc = [[JINAutoLayoutController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         }
         default:
