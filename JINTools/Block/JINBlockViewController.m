@@ -29,7 +29,6 @@
     showLabel.center = self.view.center;
     self.showLabel = showLabel;
     [self.view addSubview:showLabel];
-
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
