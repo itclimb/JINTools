@@ -38,6 +38,10 @@
 		3FF5C4431F02034C004FD134 /* JINBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5C4421F02034C004FD134 /* JINBaseViewController.m */; };
 		3FF5C4471F02041F004FD134 /* JINRealmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5C4461F02041F004FD134 /* JINRealmController.m */; };
 		3FF5C44A1F020519004FD134 /* JINRealmPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5C4491F020519004FD134 /* JINRealmPerson.m */; };
+		3FF5C44E1F024540004FD134 /* JINRealmUpdateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5C44C1F024540004FD134 /* JINRealmUpdateController.m */; };
+		3FF5C44F1F024540004FD134 /* JINRealmUpdateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FF5C44D1F024540004FD134 /* JINRealmUpdateController.xib */; };
+		3FF5C4531F0252D5004FD134 /* JINRealmAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5C4511F0252D5004FD134 /* JINRealmAddController.m */; };
+		3FF5C4541F0252D5004FD134 /* JINRealmAddController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FF5C4521F0252D5004FD134 /* JINRealmAddController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +103,12 @@
 		3FF5C4461F02041F004FD134 /* JINRealmController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINRealmController.m; sourceTree = "<group>"; };
 		3FF5C4481F020519004FD134 /* JINRealmPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINRealmPerson.h; sourceTree = "<group>"; };
 		3FF5C4491F020519004FD134 /* JINRealmPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINRealmPerson.m; sourceTree = "<group>"; };
+		3FF5C44B1F024540004FD134 /* JINRealmUpdateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINRealmUpdateController.h; sourceTree = "<group>"; };
+		3FF5C44C1F024540004FD134 /* JINRealmUpdateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINRealmUpdateController.m; sourceTree = "<group>"; };
+		3FF5C44D1F024540004FD134 /* JINRealmUpdateController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JINRealmUpdateController.xib; sourceTree = "<group>"; };
+		3FF5C4501F0252D5004FD134 /* JINRealmAddController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINRealmAddController.h; sourceTree = "<group>"; };
+		3FF5C4511F0252D5004FD134 /* JINRealmAddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINRealmAddController.m; sourceTree = "<group>"; };
+		3FF5C4521F0252D5004FD134 /* JINRealmAddController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JINRealmAddController.xib; sourceTree = "<group>"; };
 		B41DC3097E4C906C81A2D612 /* Pods_JINTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JINTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DDCC99AFBC724DC2B812E4 /* Pods-JINTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JINTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JINTools/Pods-JINTools.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -279,6 +289,12 @@
 			children = (
 				3FF5C4451F02041F004FD134 /* JINRealmController.h */,
 				3FF5C4461F02041F004FD134 /* JINRealmController.m */,
+				3FF5C44B1F024540004FD134 /* JINRealmUpdateController.h */,
+				3FF5C44C1F024540004FD134 /* JINRealmUpdateController.m */,
+				3FF5C44D1F024540004FD134 /* JINRealmUpdateController.xib */,
+				3FF5C4501F0252D5004FD134 /* JINRealmAddController.h */,
+				3FF5C4511F0252D5004FD134 /* JINRealmAddController.m */,
+				3FF5C4521F0252D5004FD134 /* JINRealmAddController.xib */,
 				3FF5C4481F020519004FD134 /* JINRealmPerson.h */,
 				3FF5C4491F020519004FD134 /* JINRealmPerson.m */,
 			);
@@ -357,6 +373,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF5C44F1F024540004FD134 /* JINRealmUpdateController.xib in Resources */,
+				3FF5C4541F0252D5004FD134 /* JINRealmAddController.xib in Resources */,
 				3F741F251EFCC0E200459F20 /* JINUpdataController.xib in Resources */,
 				3F1B34BE1EFB77C000B41AC1 /* Info.plist in Resources */,
 				3F741F201EFCBB0500459F20 /* JINAddController.xib in Resources */,
@@ -427,6 +445,8 @@
 				3F741F1F1EFCBB0500459F20 /* JINAddController.m in Sources */,
 				3F741F151EFBAAC500459F20 /* JINDataTestController.m in Sources */,
 				3FF5C43B1F0202E4004FD134 /* JINBlockSecondController.m in Sources */,
+				3FF5C44E1F024540004FD134 /* JINRealmUpdateController.m in Sources */,
+				3FF5C4531F0252D5004FD134 /* JINRealmAddController.m in Sources */,
 				3FF5C4471F02041F004FD134 /* JINRealmController.m in Sources */,
 				3F1B34BB1EFB77C000B41AC1 /* FMDatabasePool.m in Sources */,
 				3F1B34BC1EFB77C000B41AC1 /* FMDatabaseQueue.m in Sources */,

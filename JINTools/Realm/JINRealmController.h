@@ -12,3 +12,12 @@
 @interface JINRealmController :JINBaseViewController
 
 @end
+
+@interface JINRealmCell : UITableViewCell
+
+@property(nonatomic, strong) UIImageView *icon;
+@property(nonatomic, strong) UILabel *nameLabel;
+@property(nonatomic, strong) UILabel *ageLabel;
+@property(nonatomic, strong) UILabel *sexLabel;
+
+@end

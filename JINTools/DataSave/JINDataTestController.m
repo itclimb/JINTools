@@ -81,6 +81,7 @@
         JINModel *currentModel = self.datas[indexPath.row];
         currentModel.name = name;
         currentModel.age = age;
+        //更新数据库
         [JINfmdbTool update:currentModel];
         [self.tableView reloadData];
         
