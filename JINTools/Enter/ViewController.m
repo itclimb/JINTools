@@ -10,6 +10,7 @@
 #import "JINBlockViewController.h"
 #import "JINTestView.h"
 #import "JINDataTestController.h"
+#import "JINRealmController.h"
 #import "JINAutoLayoutController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -29,9 +30,11 @@
     
     self.datas = @[
                    @"传值",
-                   @"数据持久化",
+                   @"fmdb",
+                   @"Realm",
                    @"自动布局"
                    ];
+    
 }
 
 //MARK: - UITableViewDataSource,
@@ -80,6 +83,12 @@
             break;
         }
         case 2:
+        {
+            JINRealmController *vc = [[JINRealmController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 3:
         {
             JINAutoLayoutController *vc = [[JINAutoLayoutController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
