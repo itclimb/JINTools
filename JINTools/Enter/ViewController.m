@@ -11,6 +11,7 @@
 #import "JINTestView.h"
 #import "JINDataTestController.h"
 #import "JINRealmController.h"
+#import "JINRealmApplyController.h"
 #import "JINAutoLayoutController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -32,6 +33,7 @@
                    @"传值",
                    @"fmdb",
                    @"Realm",
+                   @"Realm应用",
                    @"自动布局"
                    ];
     
@@ -88,7 +90,13 @@
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-        case 3:
+            case 3:
+        {
+            JINRealmApplyController *vc = [[JINRealmApplyController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 4:
         {
             JINAutoLayoutController *vc = [[JINAutoLayoutController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];

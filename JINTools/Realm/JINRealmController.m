@@ -31,6 +31,10 @@
     
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addClick:)];
     self.navigationItem.rightBarButtonItem = item;
+    
+    
+    NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSLog(@"数据库地址:%@",filePath);
 }
 
 //MARK: - 查
@@ -70,6 +74,10 @@
     JINRealmCell *cell = [tableView dequeueReusableCellWithIdentifier:@"identifier"];
     
     JINRealmPerson *model = self.datas[indexPath.row];
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    [realm transactionWithBlock:^{
+        model.name = @"test";
+    }];
     cell.nameLabel.text = model.name;
     cell.ageLabel.text = model.age;
     cell.sexLabel.text = model.sex;
@@ -80,7 +88,9 @@
 //MARK: - 改
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     JINRealmUpdateController *vc = [[JINRealmUpdateController alloc] init];
+    
     JINRealmPerson *model = self.datas[indexPath.row];
     vc.model = model;
     

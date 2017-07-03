@@ -21,6 +21,8 @@
 		3F1B34C11EFB77FB00B41AC1 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1B34C01EFB77FB00B41AC1 /* libsqlite3.0.tbd */; };
 		3F2794321F009857008DA99D /* JINAutoLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2794311F009857008DA99D /* JINAutoLayoutController.m */; };
 		3F2794351F009C86008DA99D /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2794331F009C86008DA99D /* NSArray+Log.m */; };
+		3F2877121F06305100823171 /* JINRealmApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2877111F06305100823171 /* JINRealmApplyController.m */; };
+		3F2877151F06315100823171 /* JINPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2877141F06315100823171 /* JINPhoneModel.m */; };
 		3F29EC941EEE2EB700959533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29EC931EEE2EB700959533 /* main.m */; };
 		3F29EC9F1EEE2EB800959533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F29EC9E1EEE2EB800959533 /* Assets.xcassets */; };
 		3F29ECA21EEE2EB800959533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F29ECA01EEE2EB800959533 /* LaunchScreen.storyboard */; };
@@ -72,6 +74,10 @@
 		3F2794311F009857008DA99D /* JINAutoLayoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINAutoLayoutController.m; sourceTree = "<group>"; };
 		3F2794331F009C86008DA99D /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		3F2794341F009C86008DA99D /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		3F2877101F06305100823171 /* JINRealmApplyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINRealmApplyController.h; sourceTree = "<group>"; };
+		3F2877111F06305100823171 /* JINRealmApplyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINRealmApplyController.m; sourceTree = "<group>"; };
+		3F2877131F06315100823171 /* JINPhoneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINPhoneModel.h; sourceTree = "<group>"; };
+		3F2877141F06315100823171 /* JINPhoneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINPhoneModel.m; sourceTree = "<group>"; };
 		3F29EC8F1EEE2EB700959533 /* JINTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JINTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F29EC931EEE2EB700959533 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F29EC9E1EEE2EB800959533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -205,6 +211,17 @@
 			path = AutoLayout;
 			sourceTree = "<group>";
 		};
+		3F28770F1F06301800823171 /* Realm应用 */ = {
+			isa = PBXGroup;
+			children = (
+				3F2877101F06305100823171 /* JINRealmApplyController.h */,
+				3F2877111F06305100823171 /* JINRealmApplyController.m */,
+				3F2877131F06315100823171 /* JINPhoneModel.h */,
+				3F2877141F06315100823171 /* JINPhoneModel.m */,
+			);
+			path = "Realm应用";
+			sourceTree = "<group>";
+		};
 		3F29EC861EEE2EB700959533 = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +248,7 @@
 				3F1B34A01EFA429900B41AC1 /* Protocol */,
 				3FF5C4551F025962004FD134 /* Sqlite */,
 				3FF5C4441F0203EF004FD134 /* Realm */,
+				3F28770F1F06301800823171 /* Realm应用 */,
 				3F27942F1F009815008DA99D /* AutoLayout */,
 				3F1B348E1EFA046100B41AC1 /* Extension */,
 				3F1B34AB1EFB77A800B41AC1 /* Lib */,
@@ -439,11 +457,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2877121F06305100823171 /* JINRealmApplyController.m in Sources */,
 				3FF5C4671F025962004FD134 /* JINUpdataController.m in Sources */,
 				3F2794321F009857008DA99D /* JINAutoLayoutController.m in Sources */,
 				3FF5C43B1F0202E4004FD134 /* JINBlockSecondController.m in Sources */,
 				3FF5C44E1F024540004FD134 /* JINRealmUpdateController.m in Sources */,
 				3FF5C4531F0252D5004FD134 /* JINRealmAddController.m in Sources */,
+				3F2877151F06315100823171 /* JINPhoneModel.m in Sources */,
 				3FF5C4471F02041F004FD134 /* JINRealmController.m in Sources */,
 				3F1B34BB1EFB77C000B41AC1 /* FMDatabasePool.m in Sources */,
 				3F1B34BC1EFB77C000B41AC1 /* FMDatabaseQueue.m in Sources */,
