@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		24826FE6CB233627325E5179 /* Pods_JINTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41DC3097E4C906C81A2D612 /* Pods_JINTools.framework */; };
-		3F1B34911EFA046100B41AC1 /* UIView+JINExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34901EFA046100B41AC1 /* UIView+JINExtension.m */; };
+		3F0334511F287ABD0046D3BD /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03344E1F287ABD0046D3BD /* NSArray+Log.m */; };
+		3F0334521F287ABD0046D3BD /* UIView+JINExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0334501F287ABD0046D3BD /* UIView+JINExtension.m */; };
+		3F03345A1F287E780046D3BD /* JINWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0334591F287E780046D3BD /* JINWebView.m */; };
 		3F1B34951EFA04B200B41AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34941EFA04B200B41AC1 /* AppDelegate.m */; };
 		3F1B34A61EFA429900B41AC1 /* JINProtocolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34A31EFA429900B41AC1 /* JINProtocolView.m */; };
 		3F1B34A71EFA429900B41AC1 /* JINTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34A51EFA429900B41AC1 /* JINTestView.m */; };
@@ -20,7 +22,6 @@
 		3F1B34BE1EFB77C000B41AC1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F1B34B81EFB77C000B41AC1 /* Info.plist */; };
 		3F1B34C11EFB77FB00B41AC1 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1B34C01EFB77FB00B41AC1 /* libsqlite3.0.tbd */; };
 		3F2794321F009857008DA99D /* JINAutoLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2794311F009857008DA99D /* JINAutoLayoutController.m */; };
-		3F2794351F009C86008DA99D /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2794331F009C86008DA99D /* NSArray+Log.m */; };
 		3F2877121F06305100823171 /* JINRealmApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2877111F06305100823171 /* JINRealmApplyController.m */; };
 		3F2877151F06315100823171 /* JINPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2877141F06315100823171 /* JINPhoneModel.m */; };
 		3F29EC941EEE2EB700959533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29EC931EEE2EB700959533 /* main.m */; };
@@ -48,8 +49,12 @@
 
 /* Begin PBXFileReference section */
 		126AC1628DB3DB7690FF1E85 /* Pods-JINTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JINTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-JINTools/Pods-JINTools.release.xcconfig"; sourceTree = "<group>"; };
-		3F1B348F1EFA046100B41AC1 /* UIView+JINExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JINExtension.h"; sourceTree = "<group>"; };
-		3F1B34901EFA046100B41AC1 /* UIView+JINExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JINExtension.m"; sourceTree = "<group>"; };
+		3F03344D1F287ABD0046D3BD /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		3F03344E1F287ABD0046D3BD /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		3F03344F1F287ABD0046D3BD /* UIView+JINExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JINExtension.h"; sourceTree = "<group>"; };
+		3F0334501F287ABD0046D3BD /* UIView+JINExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JINExtension.m"; sourceTree = "<group>"; };
+		3F0334581F287E780046D3BD /* JINWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINWebView.h; sourceTree = "<group>"; };
+		3F0334591F287E780046D3BD /* JINWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINWebView.m; sourceTree = "<group>"; };
 		3F1B34931EFA04B200B41AC1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F1B34941EFA04B200B41AC1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3F1B34A11EFA429900B41AC1 /* JINProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINProperty.h; sourceTree = "<group>"; };
@@ -72,8 +77,6 @@
 		3F1B34C01EFB77FB00B41AC1 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		3F2794301F009857008DA99D /* JINAutoLayoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINAutoLayoutController.h; sourceTree = "<group>"; };
 		3F2794311F009857008DA99D /* JINAutoLayoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINAutoLayoutController.m; sourceTree = "<group>"; };
-		3F2794331F009C86008DA99D /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
-		3F2794341F009C86008DA99D /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		3F2877101F06305100823171 /* JINRealmApplyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINRealmApplyController.h; sourceTree = "<group>"; };
 		3F2877111F06305100823171 /* JINRealmApplyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINRealmApplyController.m; sourceTree = "<group>"; };
 		3F2877131F06315100823171 /* JINPhoneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINPhoneModel.h; sourceTree = "<group>"; };
@@ -132,15 +135,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F1B348E1EFA046100B41AC1 /* Extension */ = {
+		3F03344B1F287ABC0046D3BD /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				3F2794341F009C86008DA99D /* NSArray+Log.h */,
-				3F2794331F009C86008DA99D /* NSArray+Log.m */,
-				3F1B348F1EFA046100B41AC1 /* UIView+JINExtension.h */,
-				3F1B34901EFA046100B41AC1 /* UIView+JINExtension.m */,
+				3F0334541F287C2A0046D3BD /* WebView */,
+				3F03344C1F287ABD0046D3BD /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3F03344C1F287ABD0046D3BD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3F03344D1F287ABD0046D3BD /* NSArray+Log.h */,
+				3F03344E1F287ABD0046D3BD /* NSArray+Log.m */,
+				3F03344F1F287ABD0046D3BD /* UIView+JINExtension.h */,
+				3F0334501F287ABD0046D3BD /* UIView+JINExtension.m */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		3F0334541F287C2A0046D3BD /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				3F0334581F287E780046D3BD /* JINWebView.h */,
+				3F0334591F287E780046D3BD /* JINWebView.m */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		3F1B34921EFA04B200B41AC1 /* Enter */ = {
@@ -250,7 +271,7 @@
 				3FF5C4441F0203EF004FD134 /* Realm */,
 				3F28770F1F06301800823171 /* Realm应用 */,
 				3F27942F1F009815008DA99D /* AutoLayout */,
-				3F1B348E1EFA046100B41AC1 /* Extension */,
+				3F03344B1F287ABC0046D3BD /* Tools */,
 				3F1B34AB1EFB77A800B41AC1 /* Lib */,
 				3F29EC921EEE2EB700959533 /* Supporting Files */,
 			);
@@ -458,6 +479,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F2877121F06305100823171 /* JINRealmApplyController.m in Sources */,
+				3F0334521F287ABD0046D3BD /* UIView+JINExtension.m in Sources */,
+				3F0334511F287ABD0046D3BD /* NSArray+Log.m in Sources */,
+				3F03345A1F287E780046D3BD /* JINWebView.m in Sources */,
 				3FF5C4671F025962004FD134 /* JINUpdataController.m in Sources */,
 				3F2794321F009857008DA99D /* JINAutoLayoutController.m in Sources */,
 				3FF5C43B1F0202E4004FD134 /* JINBlockSecondController.m in Sources */,
@@ -468,7 +492,6 @@
 				3F1B34BB1EFB77C000B41AC1 /* FMDatabasePool.m in Sources */,
 				3F1B34BC1EFB77C000B41AC1 /* FMDatabaseQueue.m in Sources */,
 				3F1B34A61EFA429900B41AC1 /* JINProtocolView.m in Sources */,
-				3F1B34911EFA046100B41AC1 /* UIView+JINExtension.m in Sources */,
 				3FF5C4431F02034C004FD134 /* JINBaseViewController.m in Sources */,
 				3FF5C4621F025962004FD134 /* JINAddController.m in Sources */,
 				3FF5C4651F025962004FD134 /* JINfmdbTool.m in Sources */,
@@ -478,7 +501,6 @@
 				3FF5C4401F020322004FD134 /* ViewController.m in Sources */,
 				3FF5C4661F025962004FD134 /* JINModel.m in Sources */,
 				3F1B34BD1EFB77C000B41AC1 /* FMResultSet.m in Sources */,
-				3F2794351F009C86008DA99D /* NSArray+Log.m in Sources */,
 				3F1B34B91EFB77C000B41AC1 /* FMDatabase.m in Sources */,
 				3F29EC941EEE2EB700959533 /* main.m in Sources */,
 				3F1B34BA1EFB77C000B41AC1 /* FMDatabaseAdditions.m in Sources */,
