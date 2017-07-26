@@ -93,7 +93,7 @@ static const NSString *kComplete = @"complete";
         NSString *sourceUrl = dict[kSource];
         
         if ([sourceUrl isEqualToString:url]) {
-            if ( [dict[kState] isEqualToString:@"0"]) {//拦截不加载
+            if ([dict[kState] isEqualToString:@"0"]) {//拦截不加载
                 decisionHandler(WKNavigationActionPolicyCancel);
             }else{//检测并加载
                 decisionHandler(WKNavigationActionPolicyAllow);
@@ -104,13 +104,14 @@ static const NSString *kComplete = @"complete";
                 NSURL *newURL = [NSURL URLWithString:dict[kToUrl]];
                 [webView loadRequest:[NSURLRequest requestWithURL:newURL]];
             }
+            
             self.complete = dict[kComplete];
             self.complete(YES);
             return;
         }
         
         if([url containsString:sourceUrl]){
-            if ( [dict[kState] isEqualToString:@"0"]) {
+            if ([dict[kState] isEqualToString:@"0"]) {
                 decisionHandler(WKNavigationActionPolicyCancel);
             }else{
                 decisionHandler(WKNavigationActionPolicyAllow);
@@ -125,9 +126,7 @@ static const NSString *kComplete = @"complete";
             self.complete(YES);
             return;
         }
-
     }
-    
     decisionHandler(WKNavigationActionPolicyAllow);
 }
 
