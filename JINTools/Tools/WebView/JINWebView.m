@@ -17,7 +17,6 @@ static const NSString *kComplete = @"complete";
 
 //信息数据
 @property(nonatomic, strong) NSMutableArray<NSDictionary *> *info;
-
 //开始
 @property(nonatomic, copy) LoadStartBlock start;
 //完成

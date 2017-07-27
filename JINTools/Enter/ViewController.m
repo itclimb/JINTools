@@ -13,6 +13,7 @@
 #import "JINRealmController.h"
 #import "JINRealmApplyController.h"
 #import "JINAutoLayoutController.h"
+#import "JINWebViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -34,7 +35,8 @@
                    @"fmdb",
                    @"Realm",
                    @"Realm应用",
-                   @"自动布局"
+                   @"自动布局",
+                   @"网页加载"
                    ];
     
 }
@@ -90,7 +92,7 @@
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-            case 3:
+        case 3:
         {
             JINRealmApplyController *vc = [[JINRealmApplyController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
@@ -99,6 +101,12 @@
         case 4:
         {
             JINAutoLayoutController *vc = [[JINAutoLayoutController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 5:
+        {
+            JINWebViewController *vc = [[JINWebViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

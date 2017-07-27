@@ -11,6 +11,7 @@
 		3F0334511F287ABD0046D3BD /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03344E1F287ABD0046D3BD /* NSArray+Log.m */; };
 		3F0334521F287ABD0046D3BD /* UIView+JINExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0334501F287ABD0046D3BD /* UIView+JINExtension.m */; };
 		3F03345A1F287E780046D3BD /* JINWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0334591F287E780046D3BD /* JINWebView.m */; };
+		3F03345D1F2987B30046D3BD /* JINWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03345C1F2987B30046D3BD /* JINWebViewController.m */; };
 		3F1B34951EFA04B200B41AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34941EFA04B200B41AC1 /* AppDelegate.m */; };
 		3F1B34A61EFA429900B41AC1 /* JINProtocolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34A31EFA429900B41AC1 /* JINProtocolView.m */; };
 		3F1B34A71EFA429900B41AC1 /* JINTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34A51EFA429900B41AC1 /* JINTestView.m */; };
@@ -55,6 +56,8 @@
 		3F0334501F287ABD0046D3BD /* UIView+JINExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JINExtension.m"; sourceTree = "<group>"; };
 		3F0334581F287E780046D3BD /* JINWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINWebView.h; sourceTree = "<group>"; };
 		3F0334591F287E780046D3BD /* JINWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINWebView.m; sourceTree = "<group>"; };
+		3F03345B1F2987B30046D3BD /* JINWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINWebViewController.h; sourceTree = "<group>"; };
+		3F03345C1F2987B30046D3BD /* JINWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINWebViewController.m; sourceTree = "<group>"; };
 		3F1B34931EFA04B200B41AC1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F1B34941EFA04B200B41AC1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3F1B34A11EFA429900B41AC1 /* JINProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINProperty.h; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 			children = (
 				3F2794301F009857008DA99D /* JINAutoLayoutController.h */,
 				3F2794311F009857008DA99D /* JINAutoLayoutController.m */,
+				3F03345B1F2987B30046D3BD /* JINWebViewController.h */,
+				3F03345C1F2987B30046D3BD /* JINWebViewController.m */,
 			);
 			path = AutoLayout;
 			sourceTree = "<group>";
@@ -485,6 +490,7 @@
 				3FF5C4671F025962004FD134 /* JINUpdataController.m in Sources */,
 				3F2794321F009857008DA99D /* JINAutoLayoutController.m in Sources */,
 				3FF5C43B1F0202E4004FD134 /* JINBlockSecondController.m in Sources */,
+				3F03345D1F2987B30046D3BD /* JINWebViewController.m in Sources */,
 				3FF5C44E1F024540004FD134 /* JINRealmUpdateController.m in Sources */,
 				3FF5C4531F0252D5004FD134 /* JINRealmAddController.m in Sources */,
 				3F2877151F06315100823171 /* JINPhoneModel.m in Sources */,

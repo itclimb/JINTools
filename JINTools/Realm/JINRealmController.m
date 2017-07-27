@@ -74,10 +74,6 @@
     JINRealmCell *cell = [tableView dequeueReusableCellWithIdentifier:@"identifier"];
     
     JINRealmPerson *model = self.datas[indexPath.row];
-    RLMRealm *realm = [RLMRealm defaultRealm];
-    [realm transactionWithBlock:^{
-        model.name = @"test";
-    }];
     cell.nameLabel.text = model.name;
     cell.ageLabel.text = model.age;
     cell.sexLabel.text = model.sex;
