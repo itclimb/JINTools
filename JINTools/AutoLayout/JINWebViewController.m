@@ -23,8 +23,8 @@
     self.title = @"网页";
     //进行配置控制器
     WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
-    //实例化对象
     configuration.userContentController = [WKUserContentController new];
+    
     WKPreferences *preferences = [WKPreferences new];
     preferences.javaScriptCanOpenWindowsAutomatically = YES;
     configuration.preferences = preferences;

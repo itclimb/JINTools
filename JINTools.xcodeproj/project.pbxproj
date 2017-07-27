@@ -12,6 +12,8 @@
 		3F0334521F287ABD0046D3BD /* UIView+JINExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0334501F287ABD0046D3BD /* UIView+JINExtension.m */; };
 		3F03345A1F287E780046D3BD /* JINWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0334591F287E780046D3BD /* JINWebView.m */; };
 		3F03345D1F2987B30046D3BD /* JINWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03345C1F2987B30046D3BD /* JINWebViewController.m */; };
+		3F0334601F29953C0046D3BD /* JINAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03345F1F29953C0046D3BD /* JINAudioController.m */; };
+		3F0334631F29D86F0046D3BD /* JINAudioFileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0334621F29D86F0046D3BD /* JINAudioFileController.m */; };
 		3F1B34951EFA04B200B41AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34941EFA04B200B41AC1 /* AppDelegate.m */; };
 		3F1B34A61EFA429900B41AC1 /* JINProtocolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34A31EFA429900B41AC1 /* JINProtocolView.m */; };
 		3F1B34A71EFA429900B41AC1 /* JINTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34A51EFA429900B41AC1 /* JINTestView.m */; };
@@ -58,6 +60,10 @@
 		3F0334591F287E780046D3BD /* JINWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINWebView.m; sourceTree = "<group>"; };
 		3F03345B1F2987B30046D3BD /* JINWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINWebViewController.h; sourceTree = "<group>"; };
 		3F03345C1F2987B30046D3BD /* JINWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINWebViewController.m; sourceTree = "<group>"; };
+		3F03345E1F29953C0046D3BD /* JINAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINAudioController.h; sourceTree = "<group>"; };
+		3F03345F1F29953C0046D3BD /* JINAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINAudioController.m; sourceTree = "<group>"; };
+		3F0334611F29D86F0046D3BD /* JINAudioFileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINAudioFileController.h; sourceTree = "<group>"; };
+		3F0334621F29D86F0046D3BD /* JINAudioFileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINAudioFileController.m; sourceTree = "<group>"; };
 		3F1B34931EFA04B200B41AC1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F1B34941EFA04B200B41AC1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3F1B34A11EFA429900B41AC1 /* JINProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINProperty.h; sourceTree = "<group>"; };
@@ -233,6 +239,10 @@
 				3F2794311F009857008DA99D /* JINAutoLayoutController.m */,
 				3F03345B1F2987B30046D3BD /* JINWebViewController.h */,
 				3F03345C1F2987B30046D3BD /* JINWebViewController.m */,
+				3F03345E1F29953C0046D3BD /* JINAudioController.h */,
+				3F03345F1F29953C0046D3BD /* JINAudioController.m */,
+				3F0334611F29D86F0046D3BD /* JINAudioFileController.h */,
+				3F0334621F29D86F0046D3BD /* JINAudioFileController.m */,
 			);
 			path = AutoLayout;
 			sourceTree = "<group>";
@@ -495,8 +505,10 @@
 				3FF5C4531F0252D5004FD134 /* JINRealmAddController.m in Sources */,
 				3F2877151F06315100823171 /* JINPhoneModel.m in Sources */,
 				3FF5C4471F02041F004FD134 /* JINRealmController.m in Sources */,
+				3F0334601F29953C0046D3BD /* JINAudioController.m in Sources */,
 				3F1B34BB1EFB77C000B41AC1 /* FMDatabasePool.m in Sources */,
 				3F1B34BC1EFB77C000B41AC1 /* FMDatabaseQueue.m in Sources */,
+				3F0334631F29D86F0046D3BD /* JINAudioFileController.m in Sources */,
 				3F1B34A61EFA429900B41AC1 /* JINProtocolView.m in Sources */,
 				3FF5C4431F02034C004FD134 /* JINBaseViewController.m in Sources */,
 				3FF5C4621F025962004FD134 /* JINAddController.m in Sources */,
