@@ -30,15 +30,25 @@
     [self getDidAudioFile];
 
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(100, 300, 100, 100);
+    CGFloat button_w = 100;
+    CGFloat button_h = button_w;
+    CGFloat button_x = ([UIScreen mainScreen].bounds.size.width - button_w)/2;
+    CGFloat button_y = ([UIScreen mainScreen].bounds.size.height - button_h)/2;
+    button.frame = CGRectMake(button_x, button_y, button_w, button_h);
+    button.layer.masksToBounds = YES;
+    button.layer.cornerRadius = button_w/2;
+    button.layer.borderWidth = 5;
+    button.layer.borderColor = [UIColor redColor].CGColor;
     [button setTitle:@"录制" forState:UIControlStateNormal];
     button.backgroundColor = [UIColor brownColor];
     [button addTarget:self action:@selector(recoderClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     self.button = button;
     
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(jumpToDetailFile:)];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"文件" style:UIBarButtonItemStylePlain target:self action:@selector(jumpToDetailFile:)];
     self.navigationItem.rightBarButtonItem = rightItem;
+    
+    
 }
 
 //MARK: - 录制事件

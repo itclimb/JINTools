@@ -97,7 +97,7 @@
     if (!cell) {
         cell = [[JINAudioFileCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [cell setPlayBlock:^(BOOL selected) {
         
         [self playWithAudioName:self.audioInfo[indexPath.row] andSelected:selected];
@@ -107,7 +107,7 @@
     return cell;
 }
 
-- (void)viewDidDisappear:(BOOL)animated{
+- (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     _audioPlayer = nil;
     _audioPlayer.delegate = self;
@@ -143,8 +143,12 @@
         CGFloat button_y = 5;
         CGFloat button_x = [UIScreen mainScreen].bounds.size.width - 12 - button_w;
         _playButton.frame = CGRectMake(button_x, button_y, button_w, button_h);
-        _playButton.backgroundColor = [UIColor blueColor];
-        [_playButton setTitle:@"播放" forState:UIControlStateNormal];
+        _playButton.backgroundColor = [UIColor magentaColor];
+        _playButton.layer.masksToBounds = YES;
+        _playButton.layer.cornerRadius = button_w/2;
+        _playButton.layer.borderWidth = 5;
+        _playButton.layer.borderColor = [UIColor orangeColor].CGColor;
+        [_playButton setTitle:@"play" forState:UIControlStateNormal];
         [self.contentView addSubview:_playButton];
         [_playButton addTarget:self action:@selector(playButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -153,6 +157,11 @@
 
 - (void)playButtonClick:(UIButton *)sender{
     sender.selected = !sender.selected;
+    if (!sender.selected) {
+        [_playButton setTitle:@"play" forState:UIControlStateNormal];
+    }else{
+        [_playButton setTitle:@"stop" forState:UIControlStateNormal];
+    }
     if (self.block) {
         self.block(sender.selected);
     }
