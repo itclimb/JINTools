@@ -47,8 +47,6 @@
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"文件" style:UIBarButtonItemStylePlain target:self action:@selector(jumpToDetailFile:)];
     self.navigationItem.rightBarButtonItem = rightItem;
-    
-    
 }
 
 //MARK: - 录制事件

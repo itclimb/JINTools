@@ -14,6 +14,8 @@
 		3F03345D1F2987B30046D3BD /* JINWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03345C1F2987B30046D3BD /* JINWebViewController.m */; };
 		3F0334601F29953C0046D3BD /* JINAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F03345F1F29953C0046D3BD /* JINAudioController.m */; };
 		3F0334631F29D86F0046D3BD /* JINAudioFileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0334621F29D86F0046D3BD /* JINAudioFileController.m */; };
+		3F16E8C01F2AE586005B5378 /* JINVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F16E8BF1F2AE586005B5378 /* JINVideoController.m */; };
+		3F16E8C21F2AEAE3005B5378 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3F16E8C11F2AEAE3005B5378 /* 1.mp4 */; };
 		3F1B34951EFA04B200B41AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34941EFA04B200B41AC1 /* AppDelegate.m */; };
 		3F1B34A61EFA429900B41AC1 /* JINProtocolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34A31EFA429900B41AC1 /* JINProtocolView.m */; };
 		3F1B34A71EFA429900B41AC1 /* JINTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B34A51EFA429900B41AC1 /* JINTestView.m */; };
@@ -64,6 +66,9 @@
 		3F03345F1F29953C0046D3BD /* JINAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINAudioController.m; sourceTree = "<group>"; };
 		3F0334611F29D86F0046D3BD /* JINAudioFileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINAudioFileController.h; sourceTree = "<group>"; };
 		3F0334621F29D86F0046D3BD /* JINAudioFileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINAudioFileController.m; sourceTree = "<group>"; };
+		3F16E8BE1F2AE586005B5378 /* JINVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINVideoController.h; sourceTree = "<group>"; };
+		3F16E8BF1F2AE586005B5378 /* JINVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINVideoController.m; sourceTree = "<group>"; };
+		3F16E8C11F2AEAE3005B5378 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
 		3F1B34931EFA04B200B41AC1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F1B34941EFA04B200B41AC1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3F1B34A11EFA429900B41AC1 /* JINProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINProperty.h; sourceTree = "<group>"; };
@@ -243,6 +248,8 @@
 				3F03345F1F29953C0046D3BD /* JINAudioController.m */,
 				3F0334611F29D86F0046D3BD /* JINAudioFileController.h */,
 				3F0334621F29D86F0046D3BD /* JINAudioFileController.m */,
+				3F16E8BE1F2AE586005B5378 /* JINVideoController.h */,
+				3F16E8BF1F2AE586005B5378 /* JINVideoController.m */,
 			);
 			path = AutoLayout;
 			sourceTree = "<group>";
@@ -296,6 +303,7 @@
 		3F29EC921EEE2EB700959533 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F16E8C11F2AEAE3005B5378 /* 1.mp4 */,
 				3F29EC9E1EEE2EB800959533 /* Assets.xcassets */,
 				3F29ECA01EEE2EB800959533 /* LaunchScreen.storyboard */,
 				3F29ECA31EEE2EB800959533 /* Info.plist */,
@@ -433,6 +441,7 @@
 				3F1B34BE1EFB77C000B41AC1 /* Info.plist in Resources */,
 				3F29ECA21EEE2EB800959533 /* LaunchScreen.storyboard in Resources */,
 				3F29EC9F1EEE2EB800959533 /* Assets.xcassets in Resources */,
+				3F16E8C21F2AEAE3005B5378 /* 1.mp4 in Resources */,
 				3FF5C4681F025962004FD134 /* JINUpdataController.xib in Resources */,
 				3FF5C43C1F0202E4004FD134 /* JINBlockSecondController.xib in Resources */,
 			);
@@ -504,6 +513,7 @@
 				3FF5C44E1F024540004FD134 /* JINRealmUpdateController.m in Sources */,
 				3FF5C4531F0252D5004FD134 /* JINRealmAddController.m in Sources */,
 				3F2877151F06315100823171 /* JINPhoneModel.m in Sources */,
+				3F16E8C01F2AE586005B5378 /* JINVideoController.m in Sources */,
 				3FF5C4471F02041F004FD134 /* JINRealmController.m in Sources */,
 				3F0334601F29953C0046D3BD /* JINAudioController.m in Sources */,
 				3F1B34BB1EFB77C000B41AC1 /* FMDatabasePool.m in Sources */,

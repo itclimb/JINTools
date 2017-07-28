@@ -36,41 +36,27 @@
     NSError *error;
     _audioPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL URLWithString:filePath] error:&error];
     _audioPlayer.delegate = self;
-    // 设置播放次数,负数是无限循环,0是一次,1是2次
+    //负数是无限循环,0是一次,1是2次
     _audioPlayer.numberOfLoops = -1;
     if (error) {
         NSLog(@"%@",error);
     }
     [_audioPlayer prepareToPlay];
     
-    selected!=YES?[_audioPlayer pause]:[_audioPlayer play];
+    selected != YES?[_audioPlayer pause]:[_audioPlayer play];
     
     _audioPlayer.enableRate = YES;
     _audioPlayer.rate = 1.5;
-    
-    //获得峰值 必须设置Metersenable为YES
-    _audioPlayer.meteringEnabled = YES;
-    //更新峰值
-    [_audioPlayer updateMeters];
-    //获得当前峰值
-    NSLog(@"当前峰值%f",[_audioPlayer peakPowerForChannel:2]);
-    NSLog(@"平均峰值%f",[_audioPlayer averagePowerForChannel:2]);
 }
 
 
 #pragma mark - AVAudioPlayerDelegate
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
-    
+    NSLog(@"播放结束");
 }
 - (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error{
-    
-}
-- (void)audioPlayerBeginInterruption:(AVAudioPlayer *)player{
-    
-}
-- (void)audioPlayerEndInterruption:(AVAudioPlayer *)player withOptions:(NSUInteger)flags{
-    
+    NSLog(@"解码失败");
 }
 
 //MARK: - lazy load

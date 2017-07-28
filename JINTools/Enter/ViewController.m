@@ -15,6 +15,7 @@
 #import "JINAutoLayoutController.h"
 #import "JINWebViewController.h"
 #import "JINAudioController.h"
+#import "JINVideoController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -38,7 +39,8 @@
                    @"Realm应用",
                    @"自动布局",
                    @"网页加载",
-                   @"音频"
+                   @"音频",
+                   @"视频"
                    ];
     
 }
@@ -55,7 +57,6 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
     cell.textLabel.text = self.datas[indexPath.row];
-//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     //设置分割线从视图最左边开始
     if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
@@ -115,6 +116,12 @@
         case 6:
         {
             JINAudioController *vc = [[JINAudioController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 7:
+        {
+            JINVideoController *vc = [[JINVideoController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
