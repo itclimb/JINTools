@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     //1.创建要播放的元素
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"1.mp4" withExtension:nil];
     //playerItemWithAsset:通过设备相册里面的内容创建一个要播放的对象,我们这里直接选择使用URL读取
