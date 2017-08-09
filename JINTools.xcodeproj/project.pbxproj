@@ -408,7 +408,7 @@
 					3F29EC8E1EEE2EB700959533 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 22B4UKXY6S;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -647,7 +647,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 20170803152625;
+				CURRENT_PROJECT_VERSION = 20170809153516;
 				DEVELOPMENT_TEAM = 22B4UKXY6S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JINTools/JINTools.pch";
@@ -655,8 +655,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = itclimb.yuancheng.com.JINTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f47473a9-4e00-4414-a0a5-2271f0b6bb60";
-				PROVISIONING_PROFILE_SPECIFIER = JINTools_dev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -665,8 +665,8 @@
 			baseConfigurationReference = 126AC1628DB3DB7690FF1E85 /* Pods-JINTools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CURRENT_PROJECT_VERSION = 20170803152625;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 20170809153516;
 				DEVELOPMENT_TEAM = 22B4UKXY6S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JINTools/JINTools.pch";
@@ -674,8 +674,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = itclimb.yuancheng.com.JINTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4c527b7d-9833-420e-a036-70ec4150d97b";
-				PROVISIONING_PROFILE_SPECIFIER = JINTools_Dis;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
