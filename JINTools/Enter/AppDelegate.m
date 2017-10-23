@@ -21,7 +21,13 @@
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     self.window.rootViewController = navi;
     [self.window makeKeyAndVisible];
-    
+    CGFloat a = 1;
+    if (a) {
+        NSLog(@"hello xcode9");
+    }
+    if (!!a) {
+        NSLog(@"hello====");
+    }
     return YES;
 }
 

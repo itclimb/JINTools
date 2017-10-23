@@ -30,8 +30,8 @@
 		3F2877121F06305100823171 /* JINRealmApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2877111F06305100823171 /* JINRealmApplyController.m */; };
 		3F2877151F06315100823171 /* JINPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2877141F06315100823171 /* JINPhoneModel.m */; };
 		3F29EC941EEE2EB700959533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29EC931EEE2EB700959533 /* main.m */; };
-		3F29EC9F1EEE2EB800959533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F29EC9E1EEE2EB800959533 /* Assets.xcassets */; };
 		3F29ECA21EEE2EB800959533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F29ECA01EEE2EB800959533 /* LaunchScreen.storyboard */; };
+		3FB760921F693CBB006482A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB760911F693CBB006482A7 /* Images.xcassets */; };
 		3FF5C43B1F0202E4004FD134 /* JINBlockSecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5C4371F0202E4004FD134 /* JINBlockSecondController.m */; };
 		3FF5C43C1F0202E4004FD134 /* JINBlockSecondController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FF5C4381F0202E4004FD134 /* JINBlockSecondController.xib */; };
 		3FF5C43D1F0202E4004FD134 /* JINBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5C43A1F0202E4004FD134 /* JINBlockViewController.m */; };
@@ -97,10 +97,10 @@
 		3F2877141F06315100823171 /* JINPhoneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINPhoneModel.m; sourceTree = "<group>"; };
 		3F29EC8F1EEE2EB700959533 /* JINTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JINTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F29EC931EEE2EB700959533 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3F29EC9E1EEE2EB800959533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F29ECA11EEE2EB800959533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F29ECA31EEE2EB800959533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F29ECDA1EEE486100959533 /* JINTools.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JINTools.pch; sourceTree = "<group>"; };
+		3FB760911F693CBB006482A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3FF5C4361F0202E4004FD134 /* JINBlockSecondController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JINBlockSecondController.h; sourceTree = "<group>"; };
 		3FF5C4371F0202E4004FD134 /* JINBlockSecondController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JINBlockSecondController.m; sourceTree = "<group>"; };
 		3FF5C4381F0202E4004FD134 /* JINBlockSecondController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JINBlockSecondController.xib; sourceTree = "<group>"; };
@@ -304,7 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				3F16E8C11F2AEAE3005B5378 /* 1.mp4 */,
-				3F29EC9E1EEE2EB800959533 /* Assets.xcassets */,
+				3FB760911F693CBB006482A7 /* Images.xcassets */,
 				3F29ECA01EEE2EB800959533 /* LaunchScreen.storyboard */,
 				3F29ECA31EEE2EB800959533 /* Info.plist */,
 				3F29EC931EEE2EB700959533 /* main.m */,
@@ -435,12 +435,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB760921F693CBB006482A7 /* Images.xcassets in Resources */,
 				3FF5C4631F025962004FD134 /* JINAddController.xib in Resources */,
 				3FF5C44F1F024540004FD134 /* JINRealmUpdateController.xib in Resources */,
 				3FF5C4541F0252D5004FD134 /* JINRealmAddController.xib in Resources */,
 				3F1B34BE1EFB77C000B41AC1 /* Info.plist in Resources */,
 				3F29ECA21EEE2EB800959533 /* LaunchScreen.storyboard in Resources */,
-				3F29EC9F1EEE2EB800959533 /* Assets.xcassets in Resources */,
 				3F16E8C21F2AEAE3005B5378 /* 1.mp4 in Resources */,
 				3FF5C4681F025962004FD134 /* JINUpdataController.xib in Resources */,
 				3FF5C43C1F0202E4004FD134 /* JINBlockSecondController.xib in Resources */,
@@ -456,9 +456,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JINTools/Pods-JINTools-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -471,13 +474,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JINTools-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FADC578DDC89676A66A455AC /* [CP] Copy Pods Resources */ = {
@@ -646,12 +652,15 @@
 			baseConfigurationReference = E7DDCC99AFBC724DC2B812E4 /* Pods-JINTools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 20170809153516;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20171023165836;
 				DEVELOPMENT_TEAM = 22B4UKXY6S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JINTools/JINTools.pch";
 				INFOPLIST_FILE = JINTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = itclimb.yuancheng.com.JINTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -665,12 +674,15 @@
 			baseConfigurationReference = 126AC1628DB3DB7690FF1E85 /* Pods-JINTools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 20170809153516;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20171023165836;
 				DEVELOPMENT_TEAM = 22B4UKXY6S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JINTools/JINTools.pch";
 				INFOPLIST_FILE = JINTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = itclimb.yuancheng.com.JINTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";

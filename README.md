@@ -1,84 +1,60 @@
-# JINTools
-1.最初看到的是下面展示的一个赋值,表面上看来它就是通过get方法来给属性进行赋值的,实际上它是一个代理方法,这种方式是通过协议完成的.下面会通过一个Demo详细分析.
+fastlane documentation
+================
+# Installation
+
+Make sure you have the latest version of the Xcode command line tools installed:
+
 ```
-- (UIDynamicItemCollisionBoundsType)collisionBoundsType{
-    return UIDynamicItemCollisionBoundsTypeEllipse;
-}
+xcode-select --install
 ```
-2.首先,定义一个协议,协议中的的属性viewBackgroundColor是只读的,显然不能再通过set对其进行赋值,属性类型是个枚举值,只是为了更好的展示效果.
+
+## Choose your installation method:
+
+<table width="100%" >
+<tr>
+<th width="33%"><a href="http://brew.sh">Homebrew</a></td>
+<th width="33%">Installer Script</td>
+<th width="33%">Rubygems</td>
+</tr>
+<tr>
+<td width="33%" align="center">macOS</td>
+<td width="33%" align="center">macOS</td>
+<td width="33%" align="center">macOS or Linux with Ruby 2.0.0 or above</td>
+</tr>
+<tr>
+<td width="33%"><code>brew cask install fastlane</code></td>
+<td width="33%"><a href="https://download.fastlane.tools">Download the zip file</a>. Then double click on the <code>install</code> script (or run it in a terminal window).</td>
+<td width="33%"><code>sudo gem install fastlane -NV</code></td>
+</tr>
+</table>
+
+# Available Actions
+## iOS
+### ios test
 ```
-#import <Foundation/Foundation.h>
-
-typedef NS_ENUM(NSUInteger, JINViewBackgroudColorType) {
-    JINViewBackgroudColorTypeBlack,
-    JINViewBackgroudColorTypeRed,
-    JINViewBackgroudColorTypeBlue
-};
-
-@protocol JINProperty <NSObject>
-
-@optional
-@property(nonatomic, readonly) JINViewBackgroudColorType viewBackgroundColor;
-
-@end
+fastlane ios test
 ```
-3.在自定义的JINProtocolView中遵守协议(在.m中并没有实现属性的代理方法,因为它是可选的,没有什么关系).  在respondsToSelector中对枚举属性viewBackgroundColor进行判断,并实现相应的设置.这样在JINProtocolView的子类中,只需要通过实现代理方法,就能对枚举属性viewBackgroundColor赋值,并且实现对应的效果.
+Runs all the tests
+### ios beta
 ```
-#import <UIKit/UIKit.h>
-#import "JINProperty.h"
-
-@interface JINProtocolView : UIView<JINProperty>
-
-@end
+fastlane ios beta
 ```
+Submit a new Beta Build to Apple TestFlight
+
+This will also make sure the profile is up to date
+### ios appstore
 ```
-#import "JINProtocolView.h"
-
-@implementation JINProtocolView
-
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        self.backgroundColor = [UIColor blackColor];
-        
-        if ([self respondsToSelector:@selector(viewBackgroundColor)]) {
-            switch (self.viewBackgroundColor) {
-                case JINViewBackgroudColorTypeBlack:
-                    self.backgroundColor = [UIColor blackColor];
-                    break;
-                case JINViewBackgroudColorTypeBlue:
-                    self.backgroundColor = [UIColor blueColor];
-                    break;
-                case JINViewBackgroudColorTypeRed:
-                    self.backgroundColor = [UIColor redColor];
-                    break;
-                default:
-                    break;
-            }
-        }
-    }
-    return self;
-}
-
-@end
+fastlane ios appstore
 ```
-4.在测试子视图JINTestView中,实现代理方法,就能设置JINTestView的背景视图为蓝色.所以可以看出,所谓的用get方法给属性赋值,实际上是通过协议,利用代理方法来实现属性对应的效果
+
+### ios release
 ```
-#import "JINProtocolView.h"
-
-@interface JINTestView : JINProtocolView
-
-@end
+fastlane ios release
 ```
-```
-#import "JINTestView.h"
+Deploy a new version to the App Store
 
-@implementation JINTestView
+----
 
-- (JINViewBackgroudColorType)viewBackgroundColor{
-    return JINViewBackgroudColorTypeBlue;
-}
-
-@end
-```
+This README.md is auto-generated and will be re-generated every time [fastlane](https://fastlane.tools) is run.
+More information about fastlane can be found on [fastlane.tools](https://fastlane.tools).
+The documentation of fastlane can be found on [docs.fastlane.tools](https://docs.fastlane.tools).
